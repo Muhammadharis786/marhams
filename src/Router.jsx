@@ -10,7 +10,7 @@ import Pregnancy from './Doctors/pregnancydcotor.jsx';
 import Breath from './Doctors/BreathDoctor.jsx';
 import Dermatologists from './Doctors/Dermatologists.jsx';
 import Neurologist from './Doctors/Neurologist.jsx';
-import Pulmonologist from './Doctors/pulmonologist.jsx';
+import Pulmonologist from './Doctors/Pulmonologist.jsx';
 import Piles from './Doctors/Piles.jsx';
 import Dengue from './Doctors/Dengue.jsx';
 import GendocAppoinment from './DoctorsAppoinment/gendocAppoinment.jsx';
