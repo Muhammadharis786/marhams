@@ -5,26 +5,25 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout source
         uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Clean install with no cache issues
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install --legacy-peer-deps
 
-      - name: Build Vite project
+      - name: Build project
         run: npm run build
 
       - name: Deploy to GitHub Pages
