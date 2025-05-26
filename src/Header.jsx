@@ -15,7 +15,7 @@ function Header() {
           </Link>
           <div className="list">
             <ul className="flex ">
-              <li className="p-3 cursor-pointer  transition-all duration-300 hover:bg-gray-100">Find Doctors</li>
+              <li className="p-3 cursor-pointer  transition-all duration-300 hover:bg-gray-100">All Doctors in Pakistan</li>
               <li className="p-3 cursor-pointer  transition-all duration-300 hover:bg-gray-100">Hospitals</li>
               <li className="p-3 cursor-pointer transition-all duration-300 hover:bg-gray-100">Surgeries</li>
               <li className="p-3 cursor-pointer transition-all duration-300 hover:bg-gray-100">Medicines</li>
