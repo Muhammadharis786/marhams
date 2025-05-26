@@ -3,7 +3,7 @@ name: Deploy Vite React App to GitHub Pages
 on:
   push:
     branches:
-      - main # or your default branch
+      - main
 
 jobs:
   deploy:
@@ -18,8 +18,10 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Clean install with no cache issues
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install --legacy-peer-deps
 
       - name: Build project
         run: npm run build
